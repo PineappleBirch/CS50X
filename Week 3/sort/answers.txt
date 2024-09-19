@@ -1,0 +1,26 @@
+sort1 uses: Bubble sort
+
+SOR: 1.340s
+REV: 5.522s
+RAN: 6.177s
+
+How do you know?: The difference between sorted and reversed/random is quite apparent. This leads me to believe sort1 uses Bubble sort,
+since Ω = n and O = n^2
+
+sort2 uses: Merge sort
+
+SOR: 1.665s
+REV: 1.666s
+RAN: 1.076s
+
+How do you know?: There is only very slight difference between runtimes of sorting the arrays, it is also pretty quick (around 1 - 1.5 seconds), which
+leads me to believe it is Merge sort, since Ω = n * log n and O = n * log n
+
+sort3 uses: Selection sort
+
+SOR: 3.204s
+REV: 3.162s
+RAN: 3.817s
+
+How do you know?: The difference is also small in this case (within 3.1 - 3.9 seconds), however, it took longer to sort with than sort2, so I therefore
+think it is Selection sort, since Ω = n^2 and O = n^2
