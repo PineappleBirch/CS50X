@@ -1,0 +1,14 @@
+I would calculate the mean of all the song's danceability, energy, and valence.
+
+This might not be the appropriate approach because it only expresses 1 numeric value (instead of 2 categorical values - moods)
+and also it's not sophisticated enough to actually calculate the TOP 2 moods.
+
+We could collect MUCH more data about the songs, run it through algorithms (probably DL Models) that assign "mood" values to each of the TOP 100 songs,
+or assign it manually through our own judgement.
+
+Then I'd use an equivalent of Pandas' "value_counts" DF method to get the counts of each categorical variable (mood).
+
+Then I'd sort it in order and filter for the 2 most commonly appearing moods.
+
+And voilà, there it is! The 2 most common "moods" of their songs they listened to the most in 2018. We could use these to create a recommendation lists:
+Recommend to the user those songs that match these 2 moods.
